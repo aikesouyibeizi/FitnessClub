@@ -1,0 +1,157 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 26.67vw;
+	overflow-x:hidden;
+
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.15rem;
+	 overflow-x:hidden;
+	 /*background-color: #f2f2f2;*/
+}
+/*===========Header===========*/
+.orderComfirm .mint-header{
+	 background-color: #f2f2f2;
+	 /*border-bottom:1px solid #ccc;*/
+	 /*box-shadow: #eee 0rem 0.05rem 0.05rem 0rem;*/
+	 color: #000;
+}
+.orderComfirm .mint-header.is-fixed {
+	height: 0.49rem;
+	font-size: 0.15rem;
+}
+/*============Content========*/
+/*============Content-addr========*/
+.orderComfirm .content .addr{
+	height: 0.91rem;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 1.4rem;
+	margin: 0.49rem 0.05rem 0 0.05rem;
+	border-radius: 3%;
+	padding: 0 0.1rem;
+	box-shadow: #ccc 0 1px 1px 1px;
+}
+.orderComfirm .content .addr .iconfont:first-child{
+	font-size: 0.3rem;
+}
+.orderComfirm .content .addr .center{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.orderComfirm .content .addr .center .personInfo{
+	display: flex;
+	justify-content: flex-start;
+	height: 0.45rem;
+	position: relative;
+}
+.orderComfirm .content .addr .center .personInfo .name{
+	display: flex;
+	align-items: center;
+}
+.orderComfirm .content .addr .center .personInfo .tel{
+	display: flex;
+	align-items: center;
+	font-size: 0.13rem;
+    color: #959292;
+    padding-left: 0.1rem;
+}
+.orderComfirm .content .addr .center .detailAddr{
+	height: 0.45rem;
+	line-height: 0.45rem;
+	font-size: 0.12rem;
+}
+/*============Content-info=============*/
+.orderComfirm .content .info {
+	margin: 0.12rem 0.05rem 0 0.05rem;
+	padding:0 0.1rem;
+	background-color: #fff;
+	border-radius: 3%;
+	box-shadow: #ccc 0 1px 1px 1px;
+}
+.orderComfirm .content .info .title{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	/*border-bottom: 1px solid #ccc;*/
+}
+.orderComfirm .content .info .title img{
+	width: 0.296rem;
+	height: 0.153rem;
+	margin-top: 0.02rem;
+}
+.orderComfirm .content .info .title span{
+	font-weight: bold;
+	/*font-style:oblique;*/
+	padding-left: 0.05rem;
+}
+.orderComfirm .content .info .course{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	/*border-bottom: 1px solid #ccc;*/
+	margin: 0 0.05rem 0 0.05rem;
+}
+.orderComfirm .content .info .course img{
+	width: 1rem;
+	height: 1rem;
+	background-color:blue;
+}
+.orderComfirm .content .info .course .detail{
+	flex:1;
+	margin-left: 0.15rem;
+}
+/*============Content-orderContent=============*/
+.orderComfirm .content .info .orderContent{
+	margin:0.1rem 0.05rem 0.05rem 0.05rem;
+	padding-bottom: 0.1rem;
+
+}
+.orderComfirm .content .info .orderContent .nav{
+	font-size: 0.16rem;
+	margin-bottom: 0.05rem;
+}
+.orderComfirm .content .info .orderContent .con .con1{
+	margin-bottom: 0.03rem;
+	color: #959292;
+}
+.orderComfirm .content .info .orderContent .con .con2{
+	margin-bottom: 0.03rem;
+	color: #959292;
+}
+/*============Footer========*/
+.orderComfirm .footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content:flex-end;
+	height: 0.55rem;
+	line-height: 0.49rem;
+	background-color: #fff;
+	padding: 0.05rem;
+}
+.orderComfirm .footer .price{
+	font-size: 0.18rem;
+}
+.orderComfirm .footer .mint-button--small{
+	height: 0.4rem;
+	margin-left: 0.1rem;
+}
+.orderComfirm .footer .mint-button--primary {
+	color: #fff;
+	background-color: #ff4f26;
+}

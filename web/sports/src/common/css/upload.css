@@ -1,0 +1,17 @@
+.pic_list_box {
+  display: flex;
+}
+.pic_list_box .upload_btn {
+  width: 80px;
+  height: 80px;
+  padding-left: 15px;
+}
+.pic_list_box .pic_list {
+  display: flex;
+}
+.pic_list_box .pic_list img {
+  width: 80px;
+  height: 80px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}

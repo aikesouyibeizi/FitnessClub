@@ -1,0 +1,65 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 26.67vw;
+	overflow-x:hidden;
+
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.15rem;
+	 overflow-x:hidden;
+}
+/*-------Header-------*/
+.modifyAddr .mint-header{
+	 background-color: #fff;
+	 border-bottom:1px solid #ccc;
+	 /*box-shadow: #eee 0rem 0.05rem 0.05rem 0rem;*/
+	 color: #000;
+}
+.modifyAddr .mint-header.is-fixed {
+	height: 0.49rem;
+	font-size: 0.15rem;
+}
+.modifyAddr .mintui-more:before {
+	content: "\e602" !important;
+}
+/*========内容展示区=======*/
+.modifyAddr .content{
+	margin-top: 0.59rem;
+	height: 100%;
+	width: 100%;
+	border-top: 1px solid #eee;
+
+}
+.modifyAddr .content .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 0.5rem;
+	border-bottom: 0.5px solid #eee;
+	padding:0 0.15rem;
+
+}
+.modifyAddr .content .title input{
+	background:none;
+	outline:none;
+	border:0px;
+	/*flex: ;*/
+	width: 2.5rem;
+	text-align:left;
+}
+.modifyAddr .content .title input[type="text"]:focus,
+.modifyAddr .content .title input[type="password"]:focus {
+/*border: 1px solid #eb7350;
+background: #fff;
+outline: none;*/
+}

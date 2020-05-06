@@ -1,0 +1,316 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+html{
+  /* font-size: 13.33vw; */
+  font-size: 26.67vw;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.15rem;
+}
+a{
+  text-decoration:none;
+  color:#333;
+}
+/*=================Header===========*/
+.personalBox {
+  margin-bottom: 0.51rem;
+}
+.personalBox .header {
+  display: flex;
+  align-items: center;
+  padding: 0 0.2rem;
+  height: 1.2rem;
+  background: url("../images/login/personal_bg_top.png") no-repeat;
+  background-size: 100%;
+}
+.personalBox .header .pic {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url("../images/login/icon_default_head_portrait.png") no-repeat;
+  background-size: 100% 100%;
+}
+.personalBox .header .pic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.personalBox .header .account {
+  padding: 0 0.2rem;
+  color: #fff;
+  font-size: 0.15rem;
+}
+
+
+/*============上传图片=============*/
+.personalBox .header .pic {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.personalBox .header{
+  background: none;
+  background-color: #0da0e2;
+}
+/*============四个图标=============*/
+.personalBox .content{
+  margin-top: 0.1rem;
+  border-top: 1px solid #eee;
+}
+.personalBox .orderIcon {
+  display: flex;
+  align-items: center;
+  height: 0.89rem;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+  margin: 0.075rem 0;
+  padding-top: 0.15rem;
+}
+.personalBox .orderIcon .item {
+  width: 25%;
+  margin-top: 0.2rem;
+}
+.personalBox .orderIcon .item .iconfont {
+  display: block;
+  margin: 0 auto;
+  width: 0.23rem;
+  height: 0.23rem;
+}
+.personalBox .orderIcon .item:nth-of-type(1) .iconfont {
+  background-size: 100% 100%;
+  font-size: 0.25rem;
+  color: #000;
+}
+.personalBox .orderIcon .item:nth-of-type(2) .iconfont {
+  background-size: 100% 100%;
+  font-size: 0.2rem;
+  color: #000;
+}
+.personalBox .orderIcon .item:nth-of-type(3) .iconfont {
+  background-size: 100% 100%;
+  font-size: 0.2rem;
+  color: #000;
+}
+.personalBox .orderIcon .item:nth-of-type(4) .iconfont {
+  background-size: 100% 100%;
+  font-size: 0.25rem;
+  color: #000;
+}
+.personalBox .orderIcon .item span {
+  display: block;
+  text-align: center;
+  line-height: 0.25rem;
+  color: #000;
+  padding-top: 0.1rem;
+}
+
+/*Content*/
+.personalBox .content .title{
+    display: flex;
+    align-items: center;
+    padding-right: 0.1rem;
+    height: 0.5rem;
+    border-bottom: 0.005rem solid #d3d3d3;
+    background: #fff;
+    padding-left: 0.05rem;
+}
+.personalBox .content .title .iconfont:first-child{
+  font-size: 0.25rem;
+  color: #ccc;
+}
+.personalBox .content .title .iconfont:last-child{
+  font-size: 0.15rem;
+  color: #ccc;
+  position: absolute;
+  right: 0.15rem;
+}
+
+.personalBox .content .title span{
+  padding-left: 0.15rem;
+}
+.personalBox .tipBox .arrow {
+    width: 0.15rem;
+    height: 0.15rem;
+    background-size: 100% 100%;
+}
+.personalBox .singoutBtn {
+  display: block;
+  margin: 0.2rem auto;
+  width: 30%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  background: #fff;
+  border: 0.01rem solid #d3d3d3;
+}
+
+
+/* login样式 */
+
+#app {
+  height: 100%;
+  margin: 0 0;
+  /*padding-top: 1rem;*/
+  /*max-width: 750px;*/
+}
+
+
+/* body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea,th,td{margin:0;padding:0}
+body{font-style:normal;font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica,sans-serif}small{font-size:12px}h1{font-size:18px}h2{font-size:16px}h3{font-size:14px}h4,h5,h6{font-size:100%}ul,ol{list-style:none}a{text-decoration:none;background-color:transparent}a:hover,a:active{outline-width:0;text-decoration:none}table{border-collapse:collapse;border-spacing:0}hr{border:0;height:1px}img{border-style:none}img:not([src]){display:none}svg:not(:root){overflow:hidden}html{-webkit-touch-callout:none;-webkit-text-size-adjust:100%}input,textarea,button,a{-webkit-tap-highlight-color:rgba(0,0,0,0)}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]),video:not([controls]){display:none;height:0}progress{vertical-align:baseline}mark{background-color:#ff0;color:#000}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}button,input,select,textarea{font-size:100%;outline:0}button,input{overflow:visible}button,select{text-transform:none}textarea{overflow:auto}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.clearfix:after{display:block;height:0;content:"";clear:both} */
+
+.loginBox{
+  padding-top: 0.6rem;
+  height: 100%;
+  font-size: 0.14rem;
+  background: url("../images/logo.jpg") no-repeat;
+  background-size: 100%;  
+  text-align: center
+
+}
+.loginBox:before{
+  
+  background: url("../images/logo.jpg") no-repeat;
+  /*background-size: 100%;*/
+
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  content: "";  /* 这个不要漏了 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /*-1 可以当背景*/
+  opacity: 0.5;
+
+
+}
+.loginBox .header,
+.loginBox .main,
+.loginBox .register,
+.loginBox .other {
+  margin: 0 auto;
+  width: 75%;
+}
+.loginBox .header {
+  margin-bottom: 0.2rem;
+}
+.loginBox .header h4 {
+  line-height: 0.63rem;
+  font-size: 0.24rem;
+  text-align: center;
+  font-weight: normal;
+}
+.loginBox .main .inpBox {
+  position: relative;
+  font-size: 0.14rem;
+  height: 0.56rem;
+  border-bottom: 0.01rem solid #d3d3d3;
+
+
+}
+.loginBox .main .inpBox input {
+  border: none;
+  width: 100%;
+  height: 0.55rem;
+  position: absolute;
+  left: 0;
+  background: rgba(0,0,0,0);
+}
+.loginBox .main .inpBox input.short {
+  width: 60%;
+}
+.loginBox .main .inpBox a {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c49c63;
+}
+.loginBox .main .inpBox a.noClick {
+  color: #666;
+}
+.loginBox .main .submit {
+  display: block;
+  margin-top: 0.24rem;
+  width: 100%;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  text-align: center;
+  font-size: 0.16rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.35rem;
+  background: linear-gradient(to right, #e4bb7e, #d1a96e);
+  box-shadow: 0 0.04rem 0.02rem #d3d3d3;
+}
+.loginBox .main .changeBtn {
+  line-height: 0.6rem;
+  color: #666;
+}
+.loginBox .register {
+  line-height: 0.5rem;
+  font-size: 0.15rem;
+  text-align: center;
+}
+.loginBox .register a {
+  padding: 0 0.1rem;
+  color: #666;
+}
+.loginBox .other {
+  margin-top: 0.2rem;
+}
+.loginBox .other span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #666;
+}
+.loginBox .other span:before,
+.loginBox .other span:after {
+  content: "";
+  height: 0;
+  width: 20%;
+  border: 0.005rem solid #d3d3d3;
+}
+.loginBox .other div {
+  margin-top: 0.15rem;
+  text-align: center;
+  font-size: 0;
+}
+.loginBox .other div a {
+  display: inline-block;
+  margin: 0 0.075rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background: url("../images/login/icons_type.png") no-repeat;
+  background-size: 1.4rem;
+}
+.loginBox .other div a:nth-child(1) {
+  background-color: #ed9090;
+  background-position: -0.46rem 0.015rem;
+}
+.loginBox .other div a:nth-child(2) {
+  background-color: #6bb6ea;
+  background-position: -0.75rem 0.015rem;
+}
+.loginBox .other div a:nth-child(3) {
+  background-color: #00be00;
+  background-position: -1.1rem 0.015rem;
+}
+.loginBox .footer {
+  margin-top: 0.4rem;
+  line-height: 0.25rem;
+  text-align: center;
+  color: #666;
+}
+.loginBox .footer span {
+  margin: 0 0.075rem;
+}

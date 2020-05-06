@@ -1,0 +1,59 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+html{
+  /* font-size: 13.33vw; */
+  font-size: 26.67vw;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.15rem;
+  /*color: rgb(238,238,238);*/
+}
+a{
+  text-decoration:none;
+  color:#333;
+}
+/*===========Header===========*/
+.sports .mint-header{
+	 background-color: rgb(127,171，253);
+	 border-bottom:1px solid #ccc;
+	 box-shadow: #eee 0rem 0.05rem 0.05rem 0rem;
+	 color: #000;
+}
+.sports .mint-header.is-fixed {
+	height: 0.49rem;
+	font-size: 0.15rem;
+}
+/*=============Main-===========*/
+.sports .main{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.sports .main .item:first-child{
+  margin-top: 0.49rem;
+}
+.sports .main .item{
+  height: 3rem;
+  width: 3.75rem;
+  padding: 0.05rem;
+
+}
+.sports .main .item .img{
+  border-radius: 3%;
+  overflow: hidden;
+}
+.sports .main .item .img img{
+  height: 2.4rem;
+  width: 3.65rem;
+}
+
+.sports .main .item .detail{
+  font-size: 0.17rem;
+}

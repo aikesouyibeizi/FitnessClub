@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+	<link rel="stylesheet" href="../css/login3.css">
+</head>
+<body>
+	 <div class="loginBox">
+    <div class="header">
+      <h4>Fit健身账号注册</h4>
+    </div>
+
+    <div class="main">
+      <div class="inpBox">
+        <input type="text" placeholder="用户名" v-model="name" />
+      </div>
+      <div class="inpBox">
+        <input type="text" placeholder="手机号码" v-model="phone" />
+      </div>
+      <div class="inpBox">
+        <input type="text" placeholder="短信验证码" class="short" v-model="code" />
+        <a href="javascript:;" @click="sendCode"><!-- {{isRun?`${runTime}s后重新获取`:`获取验证码`}} --></a>
+      </div>
+      <div class="inpBox">
+        <input type="password" placeholder="登录密码" v-model="password" />
+      </div>
+      <div class="inpBox">
+        <input type="password" placeholder="支付密码" v-model="passwordPay" />
+      </div>
+      <button class="submit" @click="registerHandle">立即注册</button>
+      <router-link to="/login" class="changeBtn">已有账号，去登录！</router-link>
+    </div>
+  </div>
+</body>
+</html>

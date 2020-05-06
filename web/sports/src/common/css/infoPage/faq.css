@@ -1,0 +1,118 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 26.67vw;
+	overflow-x:hidden;
+
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.15rem;
+	 overflow-x:hidden;
+}
+/*-------Header-------*/
+.faq .mint-header{
+	 background-color: #fff;
+	 border-bottom:1px solid #ccc;
+	 box-shadow: #eee 0rem 0.05rem 0.05rem 0rem;
+	 color: #000;
+}
+.faq .mint-header.is-fixed {
+	height: 0.49rem;
+	font-size: 0.15rem;
+}
+/*========搜索栏=========*/
+.faq .mint-search{
+	margin-top: 0.49rem;
+}
+.faq .mint-searchbar{
+	position: fixed !important;
+    width: 100% !important;
+    background-color: #fff;
+}
+.faq .mint-searchbar .mint-searchbar-inner {
+   background-color: #f7f7f7;
+   height: 0.3rem;
+}
+.mint-searchbar-inner .mintui-search{
+	font-size: 0.2rem;
+    color: #6b7b8a;
+}
+
+.faq .mint-searchbar .mint-searchbar-inner input[type="search"]{
+	background-color: #f7f7f7;
+	margin-left: 0.05rem;
+}
+.faq .mint-searchbar .mint-searchbar-cancel{
+	color: #000;
+}
+
+.faq .search{
+	/*height: 100vh;*/
+    overflow: hidden;
+    margin-top: 0.49rem;
+}
+.faq .search .bar{
+	position: fixed !important;
+    width: 100% !important;
+    background-color: #fff;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    padding: 8px 10px;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    box-shadow: #eee 0rem 0.05rem 0.05rem 0rem;
+}
+.faq .search .bar .inner{
+	background-color: #f7f7f7;
+    height: 0.3rem;
+    display: flex;
+    padding: 4px 6px;
+    flex: 1;
+    border-radius: 2px;
+    align-items: center;
+}
+.faq .search .bar .inner i{
+	font-size: 0.2rem;
+    color: #6b7b8a;
+}
+.faq .search .bar .inner input[type="search"]{
+	background-color: #f7f7f7;
+    margin-left: 0.05rem;
+    background:none;
+    outline:none;
+    border:0px;
+    width: 100%;
+}
+.faq .search .bar .cancel{
+	margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*========内容展示区=======*/
+.faq .questions{
+
+	height: 0.45rem;
+	/*background-color: pink;*/
+	display: block;
+	line-height: 0.45rem;
+	display: flex;
+	justify-content:space-between;
+	padding: 0 0.1rem 0 0.1rem;
+	border-bottom: 1px solid #ccc;
+	
+}
+.faq .clickNow{
+	margin-top: 0.52rem;
+}

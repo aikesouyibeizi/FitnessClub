@@ -1,0 +1,388 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
+html{
+	font-size: 26.67vw;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.15rem;
+}
+/* ---header样式--- */
+header{
+	height: 0.49rem;
+	line-height: 0.49rem;	
+	background: #fff;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	
+}
+header div{
+	margin:0 auto;
+}
+
+/*---content---*/
+main{
+	flex: 1;
+	/* background: skyblue; */
+	overflow: auto;
+}
+main .content{
+	margin-top: 0.49rem;
+}
+main .content .banner{
+	height: 1.39rem;
+
+}
+main .content .banner img{
+	height: 100%;
+	width: 100%;
+}
+main .content .adcontent{
+	display: flex;
+	border-bottom: 1px solid #ccc;
+	margin-top: 0.25rem;
+	padding-bottom: 0.15rem
+}
+main .content .adcontent dl{
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main .content .adcontent dl .iconfont{
+	width: 0.54rem;
+	height: 0.54rem;
+	border: 1px solid #666;
+	border-radius: 50%;
+	font-size: 0.3rem;
+	color: #666;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main .content .adcontent dl dd{
+	font-size: 0.11rem;
+	margin:0.07rem auto;
+}
+/*健身环境的标题*/
+main .title{
+	height: 0.45rem;
+	/*background-color: pink;*/
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.1rem;
+}
+main .title aside:first-child{
+	padding-top:0.23rem;
+}
+main .title aside:first-child .iconfont{
+	font-size: 0.15rem;
+	color: #000;
+}
+main .title aside:first-child span{
+	font-size: 0.15rem;
+}
+main .title aside:last-child{
+	padding-top: 0.23rem;
+}
+main .title aside:last-child .iconfont{
+	font-size: 0.1rem;
+}
+main .title aside:last-child span{
+	font-size: 0.1rem;
+}
+/*健身环境*/
+main .imglist dl{
+	height: 2.6rem;
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 0;
+}
+main .imglist dl dt{
+	height: 2rem;
+	width: 100%;
+}
+main .imglist dl dt img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+main .imglist dl dd{
+	margin:0;
+}
+main .imglist dl dd:nth-child(2){
+	height: 0.2rem;
+	font-size:0.15rem;
+	color: #000;
+	margin-top: 0.08rem;
+}
+main .imglist dl dd:last-child{
+	height: 0.4rem;
+	padding-top: 0.05rem;
+	font-size: 0.075rem;
+	color: #888;
+}
+main .imglist:first-child dl{
+	margin-top:0;
+	padding-top: 0;
+}
+main .imglist dl:last-child{
+	margin-bottom: 0.05rem;
+	border-bottom: 1px solid #ccc;
+}
+
+/*健身俱乐部环境轮播图*/
+main .slidershow{
+	height: 2rem;
+	overflow: hidden;
+}
+main .middle{
+	position: relative;
+}
+main .slidershow .navigation{
+	position: absolute;
+	bottom: 0.1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+main .slidershow .navigation .bar{
+	width: 0.25rem;
+	height: 0.05rem;
+	border: 0.01rem solid #fff;
+	margin:0.03rem;
+	cursor: pointer;
+	transition: 0.4s;
+}
+main .slidershow .navigation.bar:hover{
+	background:#fff;
+}
+main .slidershow .slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+main .slidershow .slides .slide{
+	width: 20%;
+	transition: 0.6s;
+}
+main .slidershow .slides input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+main .slidershow .slides .slide img{
+	height: 100%;
+	width: 100%;
+}
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1{
+	margin-left: -40%;
+}
+#r4:checked ~ .s1{
+	margin-left: -60%;
+}
+#r5:checked ~ .s1{
+	margin-left: -80%;
+}
+/*运动项目标题*/
+main .titlesport{
+	height: 0.45rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.1rem;
+}
+main .titlesport aside:first-child{
+	padding-top:0.23rem;
+}
+main .titlesport aside:first-child .iconfont{
+	font-size: 0.15rem;
+	color: #000;
+}
+main .titlesport aside:first-child span{
+	font-size: 0.15rem;
+}
+main .titlesport aside:last-child{
+	padding-top: 0.23rem;
+}
+main .titlesport aside:last-child .iconfont{
+	font-size: 0.1rem;
+}
+main .titlesport aside:last-child span{
+	font-size: 0.1rem;
+}
+/*运动项目*/
+main .imglistsports dl{
+	height: 2.6rem;
+	margin: 0;
+	padding: 0;
+
+}
+main .imglistsports dl dt{
+	height: 2rem;
+	width: 100%;
+
+}
+main .imglistsports dl dt img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+main .imglistsports dl dd{
+	margin:0;
+}
+main .imglistsports dl dd:nth-child(2){
+	height: 0.2rem;
+	font-size:0.15rem;
+	color: #000;
+	margin-top: 0.08rem;
+}
+main .imglistsports dl dd:last-child{
+	height: 0.4rem;
+	padding-top: 0.05rem;
+	font-size: 0.075rem;
+	color: #888;
+}
+main .imglistsports:first-child dl{
+	margin-top:0;
+	padding-top: 0;
+}
+/* main .imglistsports dl:last-child{
+	margin-bottom: 0.5rem;
+} */
+/*运动项目轮播图*/
+main .slidershow2{
+	height: 2rem;
+	overflow: hidden;
+	margin-bottom: 0.49rem;
+}
+main .middle2{
+	position: relative;
+}
+main .slidershow2 .navigation{
+	position: absolute;
+	bottom: 0.1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+main .slidershow2 .navigation .bar{
+	width: 0.25rem;
+	height: 0.05rem;
+	border: 0.01rem solid #fff;
+	margin:0.03rem;
+	cursor: pointer;
+	transition: 0.4s;
+}
+main .slidershow2 .navigation .bar:hover{
+	background:#fff;
+}
+main .slidershow2 .slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+main .slidershow2 .slides .slide{
+	width: 20%;
+	transition: 0.6s;
+}
+main .slidershow2 .slides input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+main .slidershow2 .slides .slide img{
+	height: 100%;
+	width: 100%;
+}
+#ra1:checked ~ .s2{
+	margin-left: 0;
+}
+#ra2:checked ~ .s2{
+	margin-left: -20%;
+}
+#ra3:checked ~ .s2{
+	margin-left: -40%;
+}
+#ra4:checked ~ .s2{
+	margin-left: -60%;
+}
+/*---footer---*/
+/* footer{
+	height: 0.48rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.27rem;
+}
+footer aside{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+footer aside .iconfont{
+	color: #b2a3a0;
+	font-size: 0.25rem;
+}
+footer aside span{
+	color: #b2a3a0;
+	font-size: 0.1rem;
+}
+footer aside:first-child .iconfont{
+	color: #fff;
+}
+footer aside:first-child span{
+	color: #fff;
+} */
+/* Footer */
+/* footer{
+	height: 0.48rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8);
+	display: flex;
+	justify-content: space-between;
+	padding: 0.0025rem 0;
+  }
+  footer aside{
+	float: left;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;  
+  }
+  
+  footer aside .iconfont{
+	color: #b2a3a0;
+	font-size: 0.25rem;
+  }
+  footer aside span{
+	color: #b2a3a0;
+	font-size: 0.1rem;
+  }
+  footer aside:first-child .iconfont{
+	color: #fff;
+  }
+  footer aside:first-child span{
+	color: #fff;
+  } */

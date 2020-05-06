@@ -1,0 +1,52 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 26.67vw;
+	overflow-x:hidden;
+
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.15rem;
+	 overflow-x:hidden;
+}
+/*----Header---------*/
+.answer .mint-header{
+	 background-color: #fff;
+	 border-bottom:1px solid #ccc;
+	 box-shadow: #eee 0rem 0.05rem 0.05rem 0rem;
+	 color: #000;
+}
+.answer .mint-header.is-fixed {
+	height: 0.49rem;
+	font-size: 0.15rem;
+}
+/*========Content=======*/
+.answer .content{
+	margin: 0.55rem 0.06rem 0.06rem 0.06rem;
+
+}
+.answer .content .title{
+	font-weight: 900;
+	font-size: 0.2rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+.answer .content img{
+	width: 100%;
+	height: width/2;
+	margin-top: 0.15rem;
+}
+
+.answer .content .desc{
+	font-size: 0.17rem;
+	margin-top: 0.2rem;
+}

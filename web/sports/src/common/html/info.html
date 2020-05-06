@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>个人信息页</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+	<link rel="stylesheet" href="../css/login3.css">
+	<link rel="stylesheet" href="../css/personal.css">
+	<link rel="stylesheet" href="../css/Info.css">
+
+
+</head>
+<body>
+<div class="personalBox">
+	<!-- Header -->
+    <div class="header">
+      <div class="pic">
+        <img src alt />
+      </div>
+      <p class="account" @click="goLogin">请登录</p>
+    </div>
+
+    <!-- 四个图标 -->
+    <div class="orderIcon"> 
+      <a class="item" >
+        <i class="iconfont">&#xe7b5;</i>
+        <span v-html="item">训练记录</span>
+      </a>
+      <a class="item" >
+        <i class="iconfont">&#xe8da;</i>
+        <span v-html="item">体重记录</span>
+      </a>
+      <a class="item" >
+        <i class="iconfont">&#xe61b;</i>
+        <span v-html="item">健身相册</span>
+      </a>
+      <a class="item" >
+        <i class="iconfont">&#xe604;</i>
+        <span v-html="item">我的订单</span>
+      </a>
+    </div>
+
+	<!-- content -->
+	 <div class="content">
+		<div class="title">
+		  <i class="iconfont">&#xe63c;</i>
+		  <span>我的预约</span>
+		  <i class="iconfont">&#xe68d;</i>
+		</div>    	
+		<div class="title">
+		  <i class="iconfont">&#xe502;</i>
+		  <span>健身常见问题</span>
+		  <i class="iconfont">&#xe68d;</i>
+		</div>    	
+		<div class="title">
+		  <i class="iconfont">&#xe6e0;</i>
+		  <span>我的基本资料</span>
+		  <i class="iconfont">&#xe68d;</i>
+		</div>
+		<div class="title">
+		  <i class="iconfont">&#xe609;</i>
+		  <span>地址管理</span>
+		  <i class="iconfont">&#xe68d;</i>
+		</div>
+	 </div>
+    <div class="singoutBtn">退出登录</div>
+    <!-- footer -->
+	<footer>
+		<aside><i class="iconfont">&#xe50d;</i><span>首页</span></aside>
+		<aside><i class="iconfont">&#xe65e;</i><span>课程</span></aside>
+		<aside><i class="iconfont">&#xe605;</i><span>训练</span></aside>
+		<aside><i class="iconfont">&#xe804;</i><span>我的</span></aside>
+	</footer>
+  </div>
+</body>
+</html>

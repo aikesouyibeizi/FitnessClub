@@ -1,0 +1,15 @@
+.mpvue-calendar td .mc-text{
+    position: relative !important;
+}
+
+.mpvue-calendar td.selected {
+    background-color: #3b75fb;
+    color: #fff;
+    border-radius: 50%;
+}
+/* element.style {
+    width: 49.5714px !important;
+    height: 49.5714px !important;
+    font-size: 12.3929px !important;
+    line-height: 49.5714px !important;
+} */
